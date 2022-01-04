@@ -5,9 +5,10 @@ import { EmployeeregisterComponent } from './employeeregister/employeeregister.c
 import { EmployeeallComponent } from './employeeall/employeeall.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'employeeregister', pathMatch:'full'}, 
-  {path:'employeeregister', component:EmployeeregisterComponent},
+  {path:'', redirectTo:'employeeallComponent', pathMatch:'full'}, 
   {path:'employeeallComponent', component:EmployeeallComponent},
+  {path:'employeeregister', component:EmployeeregisterComponent},
+ 
 ]
 
 @NgModule({

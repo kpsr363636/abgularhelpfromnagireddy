@@ -7,11 +7,11 @@ import { EmployeeRegisterComponent } from './employee-register/employee-register
 
 const routes: Routes = [
   {path:'', redirectTo:'add', pathMatch:'full'},
-  {path: 'add', component:EmployeeRegisterComponent}
+  {path: 'add', component:EmployeeRegisterComponent},
   // {path:'', redirectTo:'add', pathMatch:'full'},
   // { path: 'add', component: EmployeeRegisterComponent },
-  // { path: 'list', component: EmployeeAllComponent },
-  // { path: 'edit/:id', component: EmployeeEditComponent },
+   { path: 'list', component: EmployeeAllComponent },
+   { path: 'edit/:id', component: EmployeeEditComponent }
   
   // { path: '', redirectTo: 'list', pathMatch: 'full' },
  

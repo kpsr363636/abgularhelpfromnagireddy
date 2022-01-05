@@ -6,14 +6,14 @@ import { Employee } from './employee';
 @Injectable()
 export class EmployeeServiceService {
 
-  baseUri : 'http://localhost:8080/api';
+  baseUri : 'http://localhost:8080/employee';
 
   constructor(private http: HttpClient) { }
 
 
   //1. save data
   createEmployee(employee: Employee): Observable<any> {
-    return this.http.post(`${this.baseUri}/create`, employee, {
+    return this.http.post(`${this.baseUri}/save`, employee, {
       responseType: 'text',
     });
   }

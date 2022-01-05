@@ -6,11 +6,15 @@ import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
 import { EmployeeRegisterComponent } from './employee-register/employee-register.component';
 
 const routes: Routes = [
-  //{path:'', redirectTo:'employeeallComponent', pathMatch:'full'},
-  { path: 'list', component: EmployeeAllComponent },
-  { path: 'edit/:id', component: EmployeeEditComponent },
-  { path: 'add', component: EmployeeRegisterComponent },
-  { path: '', redirectTo: 'list', pathMatch: 'full' },
+  {path:'', redirectTo:'add', pathMatch:'full'},
+  {path: 'add', component:EmployeeRegisterComponent}
+  // {path:'', redirectTo:'add', pathMatch:'full'},
+  // { path: 'add', component: EmployeeRegisterComponent },
+  // { path: 'list', component: EmployeeAllComponent },
+  // { path: 'edit/:id', component: EmployeeEditComponent },
+  
+  // { path: '', redirectTo: 'list', pathMatch: 'full' },
+ 
 ];
 
 @NgModule({
